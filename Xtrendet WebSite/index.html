@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xtrendet - Virtual Tourism Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Xtrendet Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Hero Background -->
+        <div class="hero-background"></div>
+        
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h2>Explore Destinations Virtually in 3D</h2>
+            <p>Discover cities, landmarks, and accommodations from the comfort of your home with Xtrendet's immersive 3D virtual tours.</p>
+            <a href="#explore" class="btn">Start Exploring</a>
+        </div>
+    </section>
+   
+    <!-- Floating Services Card -->
+<div class="floating-card">
+    <h3>Our Services</h3>
+    <ul>
+        <li>Virtual Tours for:</li>
+        <li>Real Estate</li>
+        <li>Campuses</li>
+        <li>Museums</li>
+        <li>Shops</li>
+        <li>Exhibition and Fitness Centres</li>
+        <li>Hotels and Restaurants</li>
+        <li>Coworking Spaces</li>
+        <li>Corporate Offices</li>
+    </ul>
+</div>
+
+<!-- Floating Contact Us Button -->
+<a href="#contact" class="floating-button">Contact Us</a>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Why Choose Xtrendet?</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <h3>Immersive 3D Tours</h3>
+                <p>See cities and landmarks in 3D to make informed travel decisions.</p>
+            </div>
+            <div class="card">
+                <h3>Instant Bookings</h3>
+                <p>Seamless integration with travel partners for fast bookings.</p>
+            </div>
+            <div class="card">
+                <h3>Real-Time Chatbot</h3>
+                <p>Get immediate assistance for your travel inquiries and bookings.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section id="explore" class="explore">
+        <h2>Explore Cities in 3D</h2>
+        <div class="city-grid">
+            <div class="city-item">
+                <img src="assets/images/lesotho.jfif" alt="Maseru 1">
+                <h3>Maseru</h3>
+            </div>
+            <div class="city-item">
+                <img src="assets/images/maseru.jfif" alt="City 2">
+                <h3>Lesotho</h3>
+            </div>
+            <div class="city-item">
+                <img src="assets/images/vrMAp.jpg" alt="City 3">
+                <h3>Down Sthalala</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Chatbot -->
+    <div id="chatbot">
+        <div class="chatbox">
+            <div class="chatbox-header">
+                <h4>Chat with us!</h4>
+                <button id="closeChat">X</button>
+            </div>
+            <div class="chatbox-body">
+                <p>Hi! How can I assist you?</p>
+            </div>
+            <input type="text" id="chatInput" placeholder="Type a message...">
+        </div>
+        <button id="openChat" class="btn">Chat Now</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

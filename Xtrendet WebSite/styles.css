@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgb(196, 163, 13);
+    color: #fff;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo img {
+        max-width: 100px;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 1rem;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(13, 26, 196);
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+ background-image: url('assets/images/xtrendethero.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px); /* Applies blur only to the background */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    
+    z-index: 2; /* Ensures the text is above the blurred background */
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: #d69c1d;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.features {
+    padding: 3rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: rgb(196, 163, 13);
+    padding: 1.5rem;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Parallax background for the explore section */
+.explore {
+    padding: 3rem;
+    text-align: center;
+    background-image: url('path-to-your-background-image.jpg'); /* Add your background image */
+    background-attachment: fixed; /* Fixes the background to create parallax effect */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.city-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem; /* Adds space between images */
+}
+
+.city-item {
+    width: 30%;
+    perspective: 1000px; /* Adds a 3D perspective */
+}
+
+.city-item img {
+    width: 100%;
+    height: 250px; /* Sets a fixed height for all images */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Optional hover animation */
+.city-item:hover img {
+    transform: scale(1.05) rotateX(10deg) rotateY(-5deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9); /* Starts with a slight zoom-in */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* Ends at the normal size */
+    }
+}
+
+/* Floating Services Card */
+.floating-card {
+    position: fixed;
+    bottom: 20%;
+    right: 20px;
+    width: 200px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-align: left;
+    animation: fadeIn 2s ease;
+}
+
+.floating-card h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.floating-card ul {
+    list-style: none;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+/* Floating Contact Us Button */
+.floating-button {
+    position: fixed;
+    bottom: 10%;
+    right: 20px;
+    background-color:  rgb(13, 26, 196);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 1000;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Floating Button Hover Effect */
+.floating-button:hover {
+    background-color: #0056b3;
+}
+
+/* Fade-in animation for floating card */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Floating animation for the Contact Us button */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+
+.contact {
+    padding: 3rem;
+    background-color: #f9f9f9;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input, .contact textarea {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#openChat {
+    display: none;
+}
+
+.chatbox {
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chatbox-header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chatbox-body {
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.chatbox-body p {
+    margin-bottom: 0.5rem;
+}
+
+#chatInput {
+    border: 1px solid #ccc;
+    padding: 0.8rem;
+    border-top: none;
+}
