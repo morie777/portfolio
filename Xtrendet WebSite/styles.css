@@ -59,7 +59,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
- background-image: url('assets/images/xtrendethero.png');
+ background-image: url('assets/images/xtrendetHero.png');
     background-size: cover;
     background-position: center;
     filter: blur(3px); /* Applies blur only to the background */
