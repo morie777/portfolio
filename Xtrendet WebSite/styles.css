@@ -281,3 +281,124 @@ nav {
     padding: 0.8rem;
     border-top: none;
 }
+/* General Styles */
+body {
+    font-size: 16px;
+}
+
+/* Responsive Navbar */
+nav {
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    flex-direction: column;
+    align-items: center;
+    display: none; /* Initially hidden */
+    background-color: rgb(196, 163, 13); /* Same as navbar */
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.nav-links li {
+    margin: 0.5rem 0;
+}
+
+.nav-links a {
+    font-size: 1rem;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none; /* Hidden on desktop */
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+/* Hero Section */
+.hero-content h2 {
+    font-size: 2rem;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    padding: 0 1rem;
+}
+
+/* Feature Cards */
+.feature-cards {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* City Grid */
+.city-grid {
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.city-item {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Floating Card and Button */
+.floating-card {
+    width: 90%;
+    right: 5%;
+}
+
+.floating-button {
+    right: 5%;
+}
+
+/* Contact Form */
+.contact form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    /* Navbar: Show Hamburger Menu */
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show on hamburger click */
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 2rem;
+    }
+
+    /* Floating Elements */
+    .floating-card,
+    .floating-button {
+        width: 100%;
+        right: 0;
+    }
+
+    /* City Grid */
+    .city-grid {
+        flex-direction: column;
+    }
+}
